@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kenya Trip Planner</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" />
+        <!-- Custom CSS -->
+        <link href="index.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#itinerary">Itinerary</a>
+                </li>
+            </ul>
+            <a class="navbar-brand mx-auto" href="/">
+                <img src="images/logo.jpeg" alt="Kenya Trip Logo" />
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#essentials list">Plan Your Trip</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero-section position-relative">
+            <div class="hero-text">
+                <h1>Travel With Love</h1>
+                <p>Explore with us as we celebrate the world's diverse beauty and cultures.</p>
+                <a href="#blog" class="btn btn-primary">Discover Our Stories</a>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="section light-section container my-5">
+            <h2 class="text-center section-heading" style="color: var(--primary-color)">About Us</h2>
+            <p class="text-center" style="font-size: 18px">Join us on our journey as we explore the world, one family adventure at a time.</p>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img src="images/family.jpg" alt="Our Family" class="rounded-circle mb-3" style="width: 300px; height: auto; object-fit: cover; border: 4px solid var(--secondary-color)" />
+                    <h3 style="color: var(--accent-color)">The Love's</h3>
+                    <p style="font-size: 16px">Discovering the world through our unique perspectives.</p>
+                </div>
+                <div class="col-lg-8 mt-5 mt-lg-0">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <i class="bi bi-globe" style="font-size: 48px; color: var(--primary-color)"></i>
+                            <h4 style="margin-top: 15px; color: var(--secondary-color)">Our Mission</h4>
+                            <p style="font-size: 14px">To inspire families to explore, learn, and create lasting memories.</p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <i class="bi bi-heart-fill" style="font-size: 48px; color: var(--accent-color)"></i>
+                            <h4 style="margin-top: 15px; color: var(--secondary-color)">Why We Love Travel</h4>
+                            <p style="font-size: 14px">It's all about the joy of discovery and the bonds it strengthens.</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <h4 style="color: var(--primary-color)">Meet the Family</h4>
+                        <!-- Family Pictures -->
+                        <div class="d-flex justify-content-center mt-3">
+                            <div class="mx-3 text-center">
+                                <img src="images/Kali.jpeg" alt="Kali" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover; border: 2px solid var(--secondary-color)" />
+                                <p style="font-size: 14px"><strong>Kali</strong><br />Planner & Storyteller</p>
+                            </div>
+                            <div class="mx-3 text-center">
+                                <img src="images/Shanna.jpeg" alt="Shanna" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover; border: 2px solid var(--secondary-color)" />
+                                <p style="font-size: 14px"><strong>Shanna</strong><br />Navigator & Photographer</p>
+                            </div>
+                            <div class="mx-3 text-center">
+                                <img src="images/sulwe.jpeg" alt="Sulwe" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover; border: 2px solid var(--secondary-color)" />
+                                <p style="font-size: 14px"><strong>Sulwe</strong><br />Adventurer</p>
+                            </div>
+                            <div class="mx-3 text-center">
+                                <img src="images/mikayi.jpeg" alt="Mikayi" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover; border: 2px solid var(--secondary-color)" />
+                                <p style="font-size: 14px"><strong>Mikayi</strong><br />Explorer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact or Follow us Section -->
+        <section id="contact-follow" class="text-center my-5">
+            <div class="container">
+                <h2>Follow Our Journey</h2>
+                <p>Stay connected and <a href="#" data-bs-toggle="modal" data-bs-target="#subscribeModal">subscribe</a> to our blog for live updates and more.</p>
+                <!-- Social media links -->
+                <div>
+                    <a href="#" class="btn btn-social-icon btn-instagram" aria-label="Follow us on Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn btn-social-icon btn-facebook" aria-label="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
+                    <!-- Additional social media buttons -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscription Modal -->
+        <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="subscribeModalLabel">Subscribe to Our Blog</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="subscriptionForm">
+                            <div class="mb-3">
+                                <label for="subscriberEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="subscriberEmail" required />
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Blogs Section -->
+        <section id="latest-adventures" class="container mt-5 section light-section">
+            <h2 class="text-center mb-4">Latest Blogs</h2>
+            <div class="row g-4">
+                <!-- Blog post entry -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/adventure1.jpg" class="card-img-top" alt="Adventure 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Exploring [Destination]</h5>
+                            <p class="card-text">A brief glimpse into our trip to [Destination] and what made it unforgettable.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/adventure1.jpg" class="card-img-top" alt="Adventure 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Exploring [Destination]</h5>
+                            <p class="card-text">A brief glimpse into our trip to [Destination] and what made it unforgettable.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/adventure1.jpg" class="card-img-top" alt="Adventure 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Exploring [Destination]</h5>
+                            <p class="card-text">A brief glimpse into our trip to [Destination] and what made it unforgettable.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips and Suggestions -->
+        <section id="travel-tips" class="my-5 py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Travel Tips & Guides</h2>
+                <p class="text-center">Our best travel tips and guides to help you plan your next adventure.</p>
+                <div class="row">
+                    <!-- Tip or guide -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Packing Essentials for Every Destination</h5>
+                                <p class="card-text">Discover our must-haves for any trip, ensuring you're always prepared.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Packing Essentials for Every Destination</h5>
+                                <p class="card-text">Discover our must-haves for any trip, ensuring you're always prepared.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Packing Essentials for Every Destination</h5>
+                                <p class="card-text">Discover our must-haves for any trip, ensuring you're always prepared.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-3">
+            <p>&copy; 2024 Kenya Trip Planner. All rights reserved.</p>
+            <p>Designed by Klovetech</p>
+        </footer>
+
+        <!-- Bootstrap JS, Popper.js, and jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

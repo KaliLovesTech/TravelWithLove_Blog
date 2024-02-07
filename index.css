@@ -1,0 +1,212 @@
+/* Global Variables and Root Definitions */
+:root {
+    --primary-color: #3498db; /* A lively sky blue for a fresh, open feel */
+    --secondary-color: #f1c40f; /* A sunny yellow for warmth and energy */
+    --accent-color: #e74c3c; /* A bright coral for engaging calls to action */
+    --background-light: #ecf0f1; /* Soft light blue for a clean, airy background */
+    --text-dark: #2c3e50; /* Deep navy blue for strong, readable text */
+}
+
+/* Base Styles */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    padding-top: 60px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: var(--primary-color) !important;
+    border-bottom: 3px solid var(--accent-color);
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar brand (logo and title) styles */
+.navbar-brand,
+.nav-link {
+    color: var(--background-light);
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Limiting the height of the logo */
+}
+
+/* Navbar links styling */
+.nav-link {
+    margin: 0 100px; /* Horizontal margin for links */
+    transition: color 0.3s; /* Smooth color transition for hover effect */
+}
+
+/* Navbar link hover effect */
+.nav-link:hover {
+    color: var(--accent-color); /* Color change on hover */
+}
+
+/* Blog Section Styles */
+#blog h2 {
+    color: var(--text-dark);
+    margin-bottom: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--secondary-color);
+}
+
+.card-text {
+    color: var(--text-dark);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: var(--text-dark);
+    height: 75vh; /* Adjust this value to change the hero section's height */
+    background-image: url("images/hero.jpeg"); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* border-bottom: 3px solid var(--accent-red);*/
+}
+
+.hero-section img.img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-dark);
+}
+
+.hero-text h1,
+.hero-text p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+.hero-section p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    /* color: var(--background-light); */
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #d62839;
+    border-color: #d62839;
+}
+
+/* Contacts Section */
+#contact-follow {
+    color: var(--text-dark); /* Adjust text color for better contrast and visibility */
+    padding: 50px 0; /* Add more padding for a banner-like appearance */
+}
+
+#contact-follow a {
+    color: var(--secondary-color); /* Gold color for links, adjust as needed */
+    text-decoration: underline; /* Optional, to highlight 'subscribe' as a clickable link */
+}
+
+#contact-follow .btn-social-icon {
+    color: var(--accent-color); /* Adjust social icon color for contrast */
+    margin: 0 5px; /* Space out social media icons */
+}
+
+/* Custom CSS */
+.section {
+    padding: 50px 0;
+}
+
+.light-section {
+    background-color: #f8f9fa; /* A light grey */
+    color: var(--text-dark); /* Dark text for contrast */
+}
+
+.dark-section {
+    background-color: #343a40; /* A dark grey */
+    color: #fff; /* White text for contrast */
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #dee2e6; /* Light border for heading underlines */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    font-size: 0.9em;
+    border-top: 3px solid var(--accent-color);
+}
+footer p {
+    color: var(--background-light);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: var(--secondary-color);
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: var(--primary-color);
+    }
+
+    .hero-section {
+        height: 30vh;
+    }
+}
